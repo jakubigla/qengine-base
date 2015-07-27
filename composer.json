@@ -1,0 +1,24 @@
+{
+  "name": "jakubigla/qengine-base",
+  "description": "Generic stuff for extending ZF2 applications",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "framework",
+    "zf2",
+    "qengine"
+  ],
+  "homepage": "http://youridea.pl",
+  "require": {
+    "php": ">=5.5",
+    "zendframework/zend-modulemanager": "~2.5",
+    "zendframework/zend-mvc": "~2.5"
+  },
+  "autoload": {
+    "psr-0": {
+      "QEngine": "src/"
+    },
+    "classmap": [
+      "./Module.php"
+    ]
+  }
+}
