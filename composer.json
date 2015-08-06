@@ -1,5 +1,5 @@
 {
-  "name": "jakubigla/qengine-base",
+  "name": "qengine/qengine-base",
   "description": "Generic stuff for extending ZF2 applications",
   "license": "BSD-3-Clause",
   "keywords": [
