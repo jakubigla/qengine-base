@@ -13,14 +13,15 @@ use Zend\ServiceManager\ServiceLocatorInterface;
  */
 class ModuleOptionsFactory implements FactoryInterface
 {
+    const OPTIONS_KEY = 'qengine';
     /**
      * Create service
      *
-     * @param ServiceLocatorInterface $serviceLocator
+     * @param  ServiceLocatorInterface $serviceLocator
      * @return mixed
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        return new ModuleOptions($serviceLocator->get('Config')[__NAMESPACE__]);
+        return new ModuleOptions($serviceLocator->get('Config')[self::OPTIONS_KEY]);
     }
 }

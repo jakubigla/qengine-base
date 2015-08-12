@@ -2,7 +2,6 @@
 
 namespace QEngine;
 
-use QEngine\EventManager\Listener\ErrorListener;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\Mvc\MvcEvent;
@@ -23,8 +22,6 @@ class Module implements ConfigProviderInterface, ServiceProviderInterface
      */
     public function onBootstrap(MvcEvent $event)
     {
-        $localeListener = new ErrorListener($event);
-        $localeListener->attach($event->getApplication()->getEventManager());
     }
 
     /**

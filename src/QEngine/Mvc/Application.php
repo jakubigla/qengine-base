@@ -15,11 +15,18 @@ class Application extends ZendApplication
     const ENV_DEVELOPMENT = 'development';
     const ENV_PRODUCTION  = 'production';
 
+    const APPLICATION           = 'Application';
+    const LOG_PROCESSOR_MANAGER = 'LogProcessorManager';
+    const LOG_WRITER_MANAGER    = 'LogWriterManager';
+    const LOGGER                = 'Logger';
+
     /** @var string */
     private $requestId;
 
     /**
      * Get request id
+     *
+     * @todo is this a right place for this?
      *
      * @return string
      */
