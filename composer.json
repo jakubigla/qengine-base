@@ -15,8 +15,8 @@
     "zendframework/zend-view": "~2.5"
   },
   "autoload": {
-    "psr-0": {
-      "QEngine": "src/"
+    "psr-4": {
+      "QEngine\\": "src/"
     },
     "classmap": [
       "./Module.php"
